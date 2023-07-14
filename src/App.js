@@ -17,17 +17,13 @@ export default function App(){
             price={items.price}
         />
      })
-
-    /*
-        Challenge :
-        - import the array of data from data.js
-        - map over the array to create <Card/> components
-        - display the array of card components under the Navbar
-    */
     return(
-        <div className="container">
+        <div>
             <Navbar/>
-            {dataElements}
+            <section className="cards--list">
+                {dataElements}
+            </section>
+            
             {/* <Hero/> */}
         </div>
         
