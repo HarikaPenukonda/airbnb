@@ -1,5 +1,5 @@
 import React from "react";
-import star from "../images/star.png"
+//import star from "./public/images/star.png"
 
 /*
     Challenge: Build the Card Component
@@ -29,7 +29,7 @@ export default function Card(props){
             className="card--image" 
             />
             <div className="class--stats">
-                <img src={star}
+                <img src="images/star.png"
                     alt="star-rating"
                     className="card--star"
                 />

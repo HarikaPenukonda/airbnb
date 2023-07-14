@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "./components/Navbar";
 //import Hero from "./components/Hero";
 import Card from "./components/Card";
-import katie from "./images/Katie-Zaferes.jpeg"
 
 export default function App(){
 
@@ -21,7 +20,8 @@ export default function App(){
         <div className="container">
             <Navbar/>
             <Card
-                img={katie}
+                // img={katie}
+                img="/images/Katie-Zaferes.jpeg"
                 rating="5.0"
                 reviewCount={6}
                 country="USA"
