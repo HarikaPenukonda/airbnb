@@ -8,6 +8,7 @@ export default function App(){
 
      const dataElements = data.map((items)=>{
         return <Card
+            key={items.id}
             img={items.coverImg}
             rating={items.stats.rating}
             reviewCount={items.stats.reviewCount}
