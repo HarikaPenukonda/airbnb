@@ -2,32 +2,31 @@ import React from "react";
 import Navbar from "./components/Navbar";
 //import Hero from "./components/Hero";
 import Card from "./components/Card";
+import data from "./data";
 
 export default function App(){
 
-    /*
-        Challenge: Build the Navbar component
+     const dataElements = data.map((items)=>{
+        return <Card
+            img={items.coverImg}
+            rating={items.stats.rating}
+            reviewCount={items.stats.reviewCount}
+            country={items.location}
+            title={items.title}
+            price={items.price}
+        />
+     })
 
-        Challenge : Pass props to the Card Component and display the data
-            - img("katie.img")
-            - rating ("5.0")
-            - reviewCount(6)
-            - country(any)
-            - title ("Life Lessons with katie")
-            - price (136)
+    /*
+        Challenge :
+        - import the array of data from data.js
+        - map over the array to create <Card/> components
+        - display the array of card components under the Navbar
     */
     return(
         <div className="container">
             <Navbar/>
-            <Card
-                // img={katie}
-                img="/images/Katie-Zaferes.jpeg"
-                rating="5.0"
-                reviewCount={6}
-                country="USA"
-                title="Life Lessons with Katie Zaferes"
-                price={136}
-            />
+            {dataElements}
             {/* <Hero/> */}
         </div>
         
