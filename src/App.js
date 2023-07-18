@@ -13,8 +13,9 @@ export default function App(){
             rating={items.stats.rating}
             reviewCount={items.stats.reviewCount}
             country={items.location}
-            title={items.title}
-            price={items.price}
+            // title={items.title}
+            // price={items.price}
+            {...items}
         />
      })
     return(
