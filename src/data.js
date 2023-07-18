@@ -4,7 +4,7 @@ export default [
         title: "Life Lessons with Katie Zaferes",
         description: "I will share with you what I call \"Positively Impactful Moments of Dissapointment.\" Through out my career, many of my highest moments only came after difficulties and losses. But learning from those difficult moments is what gave me the ability to grow above them and reach my goals.",
         price: 136,
-        coverImg:"images/Katie-Zaferes.jpeg",
+        coverImg:"images/kz.jpeg",
         stats:{
             rating: 5.0,
             reviewCount: 6
@@ -18,7 +18,7 @@ export default [
         title: "Learn Wedding Photography",
         description: "Interested in becoming a wedding Photographer? Join us in learning techniques requires to leave the happy couple with precious memories that will last a lifetime",
         price: 125,
-        coverImg:"images/wedding-photography.jpeg",
+        coverImg:"/images/wedding.jpeg",
         stats:{
             rating: 5.0,
             reviewCount: 30
