@@ -3,7 +3,7 @@ import React from "react";
 export default function Card(props){
     return(
        <div className="card">
-       <div className="card--badge">SOLD OUT</div>
+       {props.openSpots === 0 && <div className="card--badge">SOLD OUT</div>}
             <img src={props.img}
             alt="katie-zaferes"
             className="card--image" 
