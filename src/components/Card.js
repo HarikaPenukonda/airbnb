@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Card(props){
     let badgeText
-    if(props.items.openSpots === 0){
+    if(props.openSpots === 0){
         badgeText = "SOLD OUT"   
-    } else if (props.items.location === "Online"){
+    } else if (props.location === "Online"){
         badgeText = "ONLINE"
     }
     /*
@@ -13,7 +13,7 @@ export default function Card(props){
     return(
        <div className="card">
         {badgeText && <div className="card--badge">{badgeText}</div>}
-            <img src={props.items.coverImg}
+            <img src={props.coverImg}
             alt="katie-zaferes"
             className="card--image" 
             />
@@ -22,12 +22,12 @@ export default function Card(props){
                     alt="star-rating"
                     className="card--star"
                 />
-                <span>{props.items.stats.rating}</span>
-                <span className="grey">({props.items.stats.reviewCount}) . </span>
-                <span className="grey"> {props.items.location}</span>
+                <span>{props.stats.rating}</span>
+                <span className="grey">({props.stats.reviewCount}) . </span>
+                <span className="grey"> {props.location}</span>
             </div>
-            <p className="card--title">{props.items.title}</p>
-            <p className="card--price"><span className="bold">From ${props.items.price} / person</span></p>
+            <p className="card--title">{props.title}</p>
+            <p className="card--price"><span className="bold">From ${props.price} / person</span></p>
        </div>
     )
 }
