@@ -10,14 +10,6 @@ export default function App(){
         return <Card
             key={items.id}
             items={items}
-            // img={items.coverImg}
-            // rating={items.stats.rating}
-            // reviewCount={items.stats.reviewCount}
-            // country={items.location}
-            // title={items.title}
-            // price={items.price}
-            // openSpots={items.openSpots}
-            // {...items}
         />
      })
     return(
