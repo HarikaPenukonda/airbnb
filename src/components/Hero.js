@@ -1,10 +1,10 @@
 import React from "react";
-import exp from "../images/airbnbexp.png"
+
 
 export default function Hero(){
     return(
         <section className="Hero">
-            <img src={exp}
+            <img src="images/airbnbexp.png"
                 alt="experiences"
                 className="hero-photo"
             />
